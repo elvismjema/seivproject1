@@ -4,326 +4,120 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prepare for Computer Science</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f9f9f9;
-            text-align: center;
-        }
-        
-        header {
-            background-color: #1e56d8;
-            color: white;
-            padding: 15px 0;
-        }
-        
-        .prep-container {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 40px;
-            margin: 40px auto;
-            max-width: 1200px;
-            padding: 20px;
-        }
-
-        .prep-section {
-            background: white;
-            border-radius: 12px;
-            padding: 30px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-            transition: all 0.3s ease;
-        }
-
-        .prep-section:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 30px rgba(30, 86, 216, 0.15);
-        }
-
-        .section-header {
-            color: #1e56d8;
-            font-size: 24px;
-            font-weight: bold;
-            margin-bottom: 15px;
-            border-bottom: 3px solid #1e56d8;
-            padding-bottom: 10px;
-        }
-
-        .section-description {
-            color: #666;
-            font-size: 16px;
-            line-height: 1.6;
-            margin-bottom: 20px;
-        }
-
-        .course-list {
-            list-style: none;
-            padding: 0;
-        }
-
-        .course-item {
-            padding: 8px 0;
-            border-bottom: 1px solid #eee;
-            color: #333;
-            position: relative;
-            padding-left: 20px;
-        }
-
-        .course-item::before {
-            content: "•";
-            color: #1e56d8;
-            font-weight: bold;
-            position: absolute;
-            left: 0;
-        }
-
-        .course-item:hover {
-            color: #1e56d8;
-            transform: translateX(5px);
-            transition: all 0.3s ease;
-        }
-
-        .page-title {
-            text-align: center;
-            color: #1e56d8;
-            font-size: 36px;
-            margin: 40px 0;
-        }
-
-        .footer {
-            background: #1e56d8;
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-            margin-top: 60px;
-        }
-
-        .back-button {
-            display: inline-block;
-            background: #1e56d8;
-            color: white;
-            padding: 15px 30px;
-            text-decoration: none;
-            border-radius: 25px;
-            margin: 40px auto;
-            transition: all 0.3s ease;
-            font-weight: 500;
-            box-shadow: 0 4px 15px rgba(30, 86, 216, 0.3);
-        }
-
-        .back-button:hover {
-            background: #163c99;
-            transform: translateY(-3px);
-            box-shadow: 0 6px 25px rgba(30, 86, 216, 0.4);
-        }
-
-        /* Enhanced left column sections */
-        .enhanced-left-section {
-            background: linear-gradient(135deg, #f8f9ff 0%, #e8f0ff 100%);
-            border-left: 4px solid #1e56d8;
-        }
-
-        .enhanced-left-section .section-header {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .section-icon {
-            width: 35px;
-            height: 35px;
-            background: #1e56d8;
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 18px;
-            transition: all 0.3s ease;
-        }
-
-        .enhanced-left-section:hover .section-icon {
-            transform: rotate(10deg) scale(1.1);
-            background: #163c99;
-        }
-
-        .enhanced-left-section .section-description {
-            font-style: italic;
-            color: #555;
-            background: rgba(255, 255, 255, 0.7);
-            padding: 15px;
-            border-radius: 8px;
-            border-left: 3px solid #1e56d8;
-        }
-
-        .enhanced-course-list {
-            list-style: none;
-            padding: 0;
-        }
-
-        .enhanced-course-item {
-            padding: 12px 0;
-            border-bottom: 1px solid rgba(30, 86, 216, 0.1);
-            color: #333;
-            position: relative;
-            padding-left: 25px;
-            transition: all 0.3s ease;
-            cursor: pointer;
-        }
-
-        .enhanced-course-item::before {
-            content: "▶";
-            color: #1e56d8;
-            font-size: 14px;
-            position: absolute;
-            left: 0;
-            transition: all 0.3s ease;
-        }
-
-        .enhanced-course-item:hover {
-            color: #1e56d8;
-            transform: translateX(8px);
-            background: rgba(30, 86, 216, 0.05);
-            border-radius: 6px;
-            padding-right: 15px;
-        }
-
-        .enhanced-course-item:hover::before {
-            transform: rotate(90deg);
-            color: #163c99;
-        }
-
-        /* New style for centering specific sections */
-        .prep-section:last-child:nth-child(2n + 1) {
-            grid-column: 1 / -1;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        /* Responsive design */
-        @media (max-width: 768px) {
-            .prep-container {
-                grid-template-columns: 1fr;
-                gap: 20px;
-                padding: 10px;
-            }
-            
-            .page-title {
-                font-size: 28px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body class="prepare-page">
     <header>
-        <h2>GET PREPARED</h2>
+        <h2>Prepare for CS</h2>
+        <p>Get ready for your Computer Science journey</p>
     </header>
 
-    <h1 class="page-title">How to Prepare for a CS Major</h1>
+    <main class="container">
+        <h1 class="page-title">How to Prepare for a CS Major</h1>
 
-    <div class="prep-container">
-        <!-- Enhanced Left Column -->
-        <div class="prep-section enhanced-left-section">
-            <div class="section-header">
-                <div class="section-icon">📊</div>
-                Math Foundation
+        <div class="prep-container">
+            <!-- Enhanced Left Column -->
+            <div class="prep-section enhanced-left-section">
+                <div class="section-header">
+                    <div class="section-icon">📊</div>
+                    Math Foundation
+                </div>
+                <div class="section-description">Master the mathematical concepts that power computer science</div>
+                <ul class="enhanced-course-list">
+                    <li class="enhanced-course-item">Algebra II - Essential for algorithm analysis</li>
+                    <li class="enhanced-course-item">Pre-Calculus - Functions and logic foundations</li>
+                    <li class="enhanced-course-item">Calculus - Optimization and complexity theory</li>
+                    <li class="enhanced-course-item">Statistics - Data analysis and probability</li>
+                </ul>
             </div>
-            <div class="section-description">Master the mathematical concepts that power computer science</div>
-            <ul class="enhanced-course-list">
-                <li class="enhanced-course-item">Algebra II - Essential for algorithm analysis</li>
-                <li class="enhanced-course-item">Pre-Calculus - Functions and logic foundations</li>
-                <li class="enhanced-course-item">Calculus - Optimization and complexity theory</li>
-                <li class="enhanced-course-item">Statistics - Data analysis and probability</li>
-            </ul>
+
+            <div class="prep-section enhanced-left-section">
+                <div class="section-header">
+                    <div class="section-icon">💻</div>
+                    Programming Basics
+                </div>
+                <div class="section-description">Start coding now - it's your most powerful tool</div>
+                <ul class="enhanced-course-list">
+                    <li class="enhanced-course-item">Python - Perfect for beginners and data science</li>
+                    <li class="enhanced-course-item">Java - Object-oriented programming foundation</li>
+                    <li class="enhanced-course-item">JavaScript - Web development and modern apps</li>
+                    <li class="enhanced-course-item">Many more languages and frameworks</li>
+                </ul>
+            </div>
+
+            <div class="prep-section enhanced-left-section">
+                <div class="section-header">
+                    <div class="section-icon">🔬</div>
+                    Science
+                </div>
+                <div class="section-description">Build a strong foundation in scientific principles</div>
+                <ul class="enhanced-course-list">
+                    <li class="enhanced-course-item">Physics - Understanding hardware and electronics</li>
+                    <li class="enhanced-course-item">Chemistry - Problem-solving and analytical thinking</li>
+                    <li class="enhanced-course-item">Computer Science - Core principles and concepts</li>
+                </ul>
+            </div>
+
+            <div class="prep-section enhanced-left-section">
+                <div class="section-header">
+                    <div class="section-icon">🧩</div>
+                    Problem Solving
+                </div>
+                <div class="section-description">Develop the logical thinking that makes great programmers</div>
+                <ul class="enhanced-course-list">
+                    <li class="enhanced-course-item">Logic puzzles and brain teasers</li>
+                    <li class="enhanced-course-item">Algorithm challenges (LeetCode, CodeWars)</li>
+                    <li class="enhanced-course-item">Mathematical problem solving</li>
+                    <li class="enhanced-course-item">Pattern recognition exercises</li>
+                </ul>
+            </div>
+
+            <div class="prep-section enhanced-left-section">
+                <div class="section-header">
+                    <div class="section-icon">📚</div>
+                    Other Subjects
+                </div>
+                <div class="section-description">Develop a well-rounded skill set for success</div>
+                <ul class="enhanced-course-list">
+                    <li class="enhanced-course-item">English - Master technical writing and documentation</li>
+                    <li class="enhanced-course-item">Logic - Enhance reasoning and problem analysis</li>
+                    <li class="enhanced-course-item">Business - Understand software in enterprise context</li>
+                </ul>
+            </div>
+
+            <div class="prep-section enhanced-left-section">
+                <div class="section-header">
+                    <div class="section-icon">🖥️</div>
+                    Computer Literacy
+                </div>
+                <div class="section-description">Understand the digital world you'll be shaping</div>
+                <ul class="enhanced-course-list">
+                    <li class="enhanced-course-item">Operating systems (Windows, Mac, Linux)</li>
+                    <li class="enhanced-course-item">Network fundamentals and internet protocols</li>
+                    <li class="enhanced-course-item">Database concepts and data management</li>
+                    <li class="enhanced-course-item">Cybersecurity awareness and best practices</li>
+                </ul>
+            </div>
+            
+            <div class="prep-section enhanced-left-section">
+                <div class="section-header">
+                    <div class="section-icon">🤝</div>
+                    Soft Skills Development
+                </div>
+                <div class="section-description">Master essential professional competencies</div>
+                <ul class="enhanced-course-list">
+                    <li class="enhanced-course-item">Communication Skills - Learn to explain technical concepts to non-technical audiences</li>
+                    <li class="enhanced-course-item">Time Management - Master project planning and deadline management</li>
+                    <li class="enhanced-course-item">Teamwork - Practice collaborative coding and group problem-solving</li>
+                    <li class="enhanced-course-item">Adaptability - Technology changes rapidly - develop learning agility</li>
+                </ul>
+            </div>
         </div>
 
-        <div class="prep-section enhanced-left-section">
-            <div class="section-header">
-                <div class="section-icon">💻</div>
-                Programming Basics
-            </div>
-            <div class="section-description">Start coding now - it's your most powerful tool</div>
-            <ul class="enhanced-course-list">
-                <li class="enhanced-course-item">Python - Perfect for beginners and data science</li>
-                <li class="enhanced-course-item">Java - Object-oriented programming foundation</li>
-                <li class="enhanced-course-item">JavaScript - Web development and modern apps</li>
-                <li class="enhanced-course-item">Many more languages and frameworks</li>
-            </ul>
+        <div style="text-align: center;">
+            <a href="index.html" class="back-button">← Back to Home</a>
         </div>
-
-        <div class="prep-section enhanced-left-section">
-            <div class="section-header">
-                <div class="section-icon">🔬</div>
-                Science
-            </div>
-            <div class="section-description">Build a strong foundation in scientific principles</div>
-            <ul class="enhanced-course-list">
-                <li class="enhanced-course-item">Physics - Understanding hardware and electronics</li>
-                <li class="enhanced-course-item">Chemistry - Problem-solving and analytical thinking</li>
-                <li class="enhanced-course-item">Computer Science - Core principles and concepts</li>
-            </ul>
-        </div>
-
-        <div class="prep-section enhanced-left-section">
-            <div class="section-header">
-                <div class="section-icon">🧩</div>
-                Problem Solving
-            </div>
-            <div class="section-description">Develop the logical thinking that makes great programmers</div>
-            <ul class="enhanced-course-list">
-                <li class="enhanced-course-item">Logic puzzles and brain teasers</li>
-                <li class="enhanced-course-item">Algorithm challenges (LeetCode, CodeWars)</li>
-                <li class="enhanced-course-item">Mathematical problem solving</li>
-                <li class="enhanced-course-item">Pattern recognition exercises</li>
-            </ul>
-        </div>
-
-        <div class="prep-section enhanced-left-section">
-            <div class="section-header">
-                <div class="section-icon">📚</div>
-                Other Subjects
-            </div>
-            <div class="section-description">Develop a well-rounded skill set for success</div>
-            <ul class="enhanced-course-list">
-                <li class="enhanced-course-item">English - Master technical writing and documentation</li>
-                <li class="enhanced-course-item">Logic - Enhance reasoning and problem analysis</li>
-                <li class="enhanced-course-item">Business - Understand software in enterprise context</li>
-            </ul>
-        </div>
-
-        <div class="prep-section enhanced-left-section">
-            <div class="section-header">
-                <div class="section-icon">🖥️</div>
-                Computer Literacy
-            </div>
-            <div class="section-description">Understand the digital world you'll be shaping</div>
-            <ul class="enhanced-course-list">
-                <li class="enhanced-course-item">Operating systems (Windows, Mac, Linux)</li>
-                <li class="enhanced-course-item">Network fundamentals and internet protocols</li>
-                <li class="enhanced-course-item">Database concepts and data management</li>
-                <li class="enhanced-course-item">Cybersecurity awareness and best practices</li>
-            </ul>
-        </div>
-        
-        <div class="prep-section enhanced-left-section">
-            <div class="section-header">
-                <div class="section-icon">🤝</div>
-                Soft Skills Development
-            </div>
-            <div class="section-description">Master essential professional competencies</div>
-            <ul class="enhanced-course-list">
-                <li class="enhanced-course-item">Communication Skills - Learn to explain technical concepts to non-technical audiences</li>
-                <li class="enhanced-course-item">Time Management - Master project planning and deadline management</li>
-                <li class="enhanced-course-item">Teamwork - Practice collaborative coding and group problem-solving</li>
-                <li class="enhanced-course-item">Adaptability - Technology changes rapidly - develop learning agility</li>
-            </ul>
-        </div>
-    </div>
-
-    <div style="text-align: center;">
-        <a href="index.html" class="back-button">← Back to Home</a>
-    </div>
+    </main>
 
     <footer class="footer">
         <p>&copy; Elvis Mjema, Bonheur Byiringiro, Jonathan Muhire, Bonheur Mfurunkunda, Michael Wittenberg</p>
