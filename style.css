@@ -112,3 +112,546 @@ main {
     text-align: center;
     padding: 20px 0;
 }
+/* Career Page Specific Styles */
+.career-page ul {
+    list-style: none;
+    padding: 0;
+    margin: 30px 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.career-page li a {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-decoration: none;
+    background-color: #1e56d8;
+    color: #fff;
+    border-radius: 10px;
+    padding: 24px;
+    transition: all 0.3s ease;
+}
+
+.career-page li a:hover {
+    background-color: #163c99;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(30, 86, 216, 0.3);
+}
+
+.career-page li img {
+    width: 200px;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 6px;
+}
+
+.career-page li h3 {
+    margin: 0 0 8px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.career-page li p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #f0f3ff;
+}
+
+/* Individual Career Page Styles */
+.ai-engineer section,
+.cyber-security section,
+.data-scientist section,
+.gaming-animation section,
+.software-engineer section {
+    margin: 30px 0;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.ai-engineer section h3,
+.cyber-security section h3,
+.data-scientist section h3,
+.gaming-animation section h3,
+.software-engineer section h3 {
+    color: #1e56d8;
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Salary display */
+.ai-engineer section p strong,
+.cyber-security section p strong,
+.data-scientist section p strong,
+.gaming-animation section p strong,
+.software-engineer section p strong {
+    font-size: 24px;
+    color: #1e56d8;
+}
+
+/* Image containers */
+.salary-graph-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.salary-graph-container img {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Company lists */
+.career-companies-list {
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+    list-style: none;
+    padding: 0;
+}
+
+.career-companies-list li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    margin-left: 20px;
+    position: relative;
+}
+
+.career-companies-list li::before {
+    content: "▶";
+    color: #1e56d8;
+    font-size: 12px;
+    position: absolute;
+    left: -20px;
+}
+
+.career-companies-list li strong {
+    color: #1e56d8;
+}
+
+/* Learn Page Styles */
+.learn-page .skill-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-decoration: none;
+    background-color: #1e56d8;
+    color: #fff;
+    border-radius: 10px;
+    padding: 24px;
+    margin-bottom: 24px;
+    transition: all 0.3s ease;
+}
+
+.learn-page .skill-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(30, 86, 216, 0.3);
+}
+
+.learn-page .skill-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.learn-page .skill-header h3 {
+    margin: 0;
+    font-size: 20px;
+    color: #fff;
+}
+
+.learn-page .skill-badge {
+    display: inline-block;
+    background: #16a34a;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+}
+
+.learn-page .skill-description {
+    margin: 10px 0;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #f0f3ff;
+}
+
+.learn-page .skill-tags {
+    margin-top: 10px;
+}
+
+.learn-page .skill-tag {
+    display: inline-block;
+    background: #f0f3ff;
+    color: #1e56d8;
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    margin-right: 6px;
+}
+
+.learn-page .section-info {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.learn-page .section-info h2 {
+    color: #1e56d8;
+}
+
+.learn-page .section-info p {
+    max-width: 800px;
+    margin: 20px auto;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #444;
+}
+
+/* Prepare Page Styles - Updated for better text fit */
+.prepare-page .page-title {
+    text-align: center;
+    color: #1e56d8;
+    font-size: 36px;
+    margin: 40px 0;
+}
+
+.prep-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px; /* Reduced gap to give more space to boxes */
+    margin: 40px auto;
+    max-width: 1400px; /* Increased max-width for wider containers */
+    padding: 20px;
+}
+
+.back-button {
+    display: inline-block;
+    background: #1e56d8;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 25px;
+    margin: 40px auto;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    box-shadow: 0 4px 15px rgba(30, 86, 216, 0.3);
+}
+
+.prep-section {
+    background: white;
+    border-radius: 12px;
+    padding: 30px; /* Increased padding from 10px to 30px */
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    min-height: 400px; /* Added minimum height for consistency */
+}
+
+.prep-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(30, 86, 216, 0.15);
+}
+
+.enhanced-left-section {
+    background: linear-gradient(135deg, #f8f9ff 0%, #e8f0ff 100%);
+    border-left: 4px solid #1e56d8;
+}
+
+/* Make the 5th section (Soft Skills) span full width */
+.prep-section:nth-child(5) {
+    grid-column: 1 / -1;
+    max-width: none;
+    margin: 20px 0 0 0;
+}
+
+.section-header {
+    color: #1e56d8;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    border-bottom: 3px solid #1e56d8;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.section-icon {
+    width: 35px;
+    height: 35px;
+    background: #1e56d8;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.enhanced-left-section:hover .section-icon {
+    transform: rotate(10deg) scale(1.1);
+    background: #163c99;
+}
+
+.section-description {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-style: italic;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 3px solid #1e56d8;
+}
+
+.enhanced-course-list {
+    list-style: none;
+    padding: 0;
+}
+
+.enhanced-course-item {
+    padding: 15px 0; /* Increased padding for better spacing */
+    border-bottom: 1px solid rgba(30, 86, 216, 0.1);
+    color: #333;
+    position: relative;
+    padding-left: 25px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    word-wrap: break-word; /* Ensure long text wraps properly */
+    line-height: 1.5; /* Better line spacing */
+}
+
+.enhanced-course-item::before {
+    content: "▶";
+    color: #1e56d8;
+    font-size: 14px;
+    position: absolute;
+    left: 0;
+    transition: all 0.3s ease;
+    top: 15px; /* Adjust position for increased padding */
+}
+
+.enhanced-course-item:hover {
+    color: #1e56d8;
+    transform: translateX(8px);
+    background: rgba(30, 86, 216, 0.05);
+    border-radius: 6px;
+    padding-right: 15px;
+}
+
+.enhanced-course-item:hover::before {
+    transform: rotate(90deg);
+    color: #163c99;
+}
+
+/* Student Life Page Styles */
+.section {
+    margin: 2rem 0;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.section h2 {
+    color: #1e56d8;
+    margin-bottom: 1rem;
+}
+
+.section h3 {
+    color: #1e56d8;
+    margin-top: 1.5rem;
+    margin-bottom: 0.8rem;
+}
+
+.highlight-box {
+    background-color: #e8f0fe;
+    padding: 1.5rem;
+    border-left: 4px solid #1e56d8;
+    margin: 1.5rem 0;
+    border-radius: 4px;
+}
+
+.highlight-box h3 {
+    margin-top: 0;
+    color: #1e56d8;
+}
+
+.timeline {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.timeline-item {
+    background-color: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-top: 3px solid #1e56d8;
+}
+
+.timeline-item h3 {
+    margin-top: 0;
+    color: #1e56d8;
+}
+
+.timeline-item p {
+    margin: 0;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* List Styles */
+ul {
+    margin-left: 2rem;
+    line-height: 1.8;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+/* Blue Container (Special sections) */
+.blue-container {
+    background-color: #1e56d8;
+    color: white;
+    padding: 40px 0;
+    margin: 20px 0;
+}
+
+.blue-container h1 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.blue-container p {
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.blue-container .buttons a {
+    background-color: white;
+    color: #1e56d8;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.blue-container .buttons a:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-2px);
+}
+
+/* Footer */
+.footer {
+    background: #1e56d8;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 60px;
+}
+
+.footer p {
+    margin: 0;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+    .prep-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        max-width: 800px;
+    }
+    
+    .prep-section:nth-child(5) {
+        grid-column: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin: 20px auto;
+        padding: 15px;
+    }
+    
+    h1 {
+        font-size: 28px;
+        margin: 20px 0;
+    }
+    
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .buttons a {
+        min-width: auto;
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    /* Career page responsive */
+    .career-page li a {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+    
+    .career-page li img {
+        width: 150px;
+        height: 75px;
+    }
+    
+    /* Timeline responsive */
+    .timeline {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Prepare page responsive */
+    .prep-container {
+        padding: 15px;
+        gap: 15px;
+    }
+    
+    .prep-section {
+        padding: 20px;
+        min-height: auto;
+    }
+    
+    .section-header {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h2 {
+        font-size: 20px;
+    }
+    
+    .container {
+        padding: 10px;
+    }
+    
+    h1 {
+        font-size: 24px;
+    }
+    
+    .buttons a {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+}
