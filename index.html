@@ -27,6 +27,23 @@
         <a href="prepare.html">How can I be well prepared?</a>
         <a href="student-life.html">What is being a Computer Science Major like?</a>
       </div>
+
+      <!-- 👇 New Fit-for-CS Quiz Section -->
+      <section style="margin-top:40px;">
+        <h2>Are You a Good Fit for Computer Science?</h2>
+        <p>Answer a quick question below to see!</p>
+
+        <label for="fitQuiz">Do you enjoy solving puzzles and logical problems?</label>
+        <select id="fitQuiz">
+          <option value="">-- Choose an answer --</option>
+          <option value="yes">Yes, I love them!</option>
+          <option value="maybe">Sometimes, depends on the problem.</option>
+          <option value="no">Not really.</option>
+        </select>
+
+        <p id="fitResult" style="margin-top:15px; font-weight:bold;"></p>
+      </section>
+      <!-- 👆 End Quiz -->
     </div>
   </main>
 
@@ -34,6 +51,22 @@
   <footer class="footer">
     <p>&copy; Elvis Mjema, Bonheur Byiringiro, Jonathan Muhire, Bonheur Mfurunkunda, Michael Wittenberg</p>
   </footer>
+
+  <!-- Script for Quiz -->
+  <script>
+    document.getElementById("fitQuiz").addEventListener("change", function() {
+      const result = document.getElementById("fitResult");
+      if (this.value === "yes") {
+        result.textContent = "✅ Awesome! Problem-solving is a key skill for CS majors.";
+      } else if (this.value === "maybe") {
+        result.textContent = "💡 That’s okay! With practice, your problem-solving skills will grow.";
+      } else if (this.value === "no") {
+        result.textContent = "🔎 CS may feel challenging, but curiosity and practice can change that!";
+      } else {
+        result.textContent = "";
+      }
+    });
+  </script>
 
 </body>
 </html>
